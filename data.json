@@ -1,0 +1,38 @@
+{
+    "nom du topic MQTT": "Topic SSIE",
+    "temps de latence": 2,
+    "adresse du serveur MQTT": "http://localhost:8161/",
+    "nombre de trames": 10,
+    "véhicule":[
+        {
+            "VIN": "VF7VDA5BABA602430",
+            "pnb": 14,
+            "lat": 43.605,
+            "long": 1.4440,
+            "r": 153.5,
+            "a": 43.605,
+            "v": 1.4440,
+            "c": 153.5
+        },
+        {
+            "VIN": "VF7VDA5BABA602430",
+            "pnb": 14,
+            "lat": 43.605,
+            "long": 1.4440,
+            "r": 153.5,
+            "a": 43.605,
+            "v": 1.4440,
+            "c": 153.5
+        },
+        {
+            "VIN": "VF7VDA5BABA602430",
+            "pnb": 14,
+            "lat": 43.605,
+            "long": 1.4440,
+            "r": 153.5,
+            "a": 43.605,
+            "v": 1.4440,
+            "c": 153.5
+        }
+    ]
+}

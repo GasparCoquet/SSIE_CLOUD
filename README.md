@@ -1,1 +1,1 @@
-# SSIE_CLOUD
+python3 connect.py
