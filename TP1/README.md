@@ -6,5 +6,5 @@
 
 * Then on another terminal run: python3 connect.py
 
-## Fichier de configuration:
+## Configuration file:
 * data.json
