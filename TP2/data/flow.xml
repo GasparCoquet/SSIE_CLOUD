@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flowController encoding-version="1.4">
+  <maxTimerDrivenThreadCount>10</maxTimerDrivenThreadCount>
+  <maxEventDrivenThreadCount>1</maxEventDrivenThreadCount>
+  <registries/>
+  <parameterContexts/>
+  <rootGroup>
+    <id>97419f44-0186-1000-24d9-d2c50ad267fd</id>
+    <name>NiFi Flow</name>
+    <position x="0.0" y="0.0"/>
+    <comment/>
+    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+    <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+    <label>
+      <id>bcb24a84-0186-1000-7419-91f75136d3f7</id>
+      <versionedComponentId>922275b6-802c-3596-b057-f96bf0310b9c</versionedComponentId>
+      <zIndex>0</zIndex>
+      <position x="-122.47202559023515" y="-351.07475429952285"/>
+      <size height="96.0" width="376.0"/>
+      <styles>
+        <style name="font-size">24px</style>
+      </styles>
+      <value>Bravo ! 
+Bienvenue sur Nifi pour le TP3</value>
+    </label>
+  </rootGroup>
+  <controllerServices/>
+  <reportingTasks/>
+  <parameterProviders/>
+</flowController>

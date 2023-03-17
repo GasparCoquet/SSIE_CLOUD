@@ -1,0 +1,16 @@
+2023-03-17 11:00:41,860 INFO [main] org.apache.nifi.nar.NarAutoLoader Starting NAR Auto-Loader for directory ./extensions ...
+2023-03-17 11:00:41,990 INFO [main] o.a.n.f.r.CompositeExternalResourceProviderService Starting External Resource Provider Service ...
+2023-03-17 11:00:41,998 INFO [main] o.a.n.f.r.CompositeExternalResourceProviderService External Resource Provider Service is started successfully
+2023-03-17 11:00:42,009 INFO [main] org.eclipse.jetty.server.Server jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 1.8.0_332-b09
+2023-03-17 11:00:56,611 INFO [main] o.e.j.a.AnnotationConfiguration Scanning elapsed time=1970ms
+2023-03-17 11:01:00,309 INFO [main] org.eclipse.jetty.server.session DefaultSessionIdManager workerName=node0
+2023-03-17 11:01:00,311 INFO [main] org.eclipse.jetty.server.session No SessionScavenger set, using defaults
+2023-03-17 11:01:00,324 INFO [main] org.eclipse.jetty.server.session node0 Scavenging every 660000ms
+2023-03-17 11:01:02,027 INFO [main] o.e.jetty.server.handler.ContextHandler Started o.e.j.w.WebAppContext@75bd28d{/nifi-jolt-transform-json-ui-1.18.0,/nifi-jolt-transform-json-ui-1.18.0,file:///opt/nifi/nifi-current/work/jetty/nifi-jolt-transform-json-ui-1.18.0.war/webapp/,AVAILABLE}{./work/nar/extensions/nifi-standard-nar-1.18.0.nar-unpacked/NAR-INF/bundled-dependencies/nifi-jolt-transform-json-ui-1.18.0.war}
+2023-03-17 11:01:06,582 INFO [main] o.e.j.a.AnnotationConfiguration Scanning elapsed time=3506ms
+2023-03-17 11:01:12,214 INFO [main] o.e.jetty.server.handler.ContextHandler Started o.e.j.w.WebAppContext@129c4d19{nifi-standard-content-viewer,/nifi-standard-content-viewer-1.18.0,file:///opt/nifi/nifi-current/work/jetty/nifi-standard-content-viewer-1.18.0.war/webapp/,AVAILABLE}{./work/nar/extensions/nifi-standard-nar-1.18.0.nar-unpacked/NAR-INF/bundled-dependencies/nifi-standard-content-viewer-1.18.0.war}
+2023-03-17 11:01:23,482 INFO [main] o.e.j.a.AnnotationConfiguration Scanning elapsed time=10187ms
+2023-03-17 11:01:27,850 INFO [main] o.e.jetty.server.handler.ContextHandler Started o.e.j.w.WebAppContext@11810917{/nifi-update-attribute-ui-1.18.0,/nifi-update-attribute-ui-1.18.0,file:///opt/nifi/nifi-current/work/jetty/nifi-update-attribute-ui-1.18.0.war/webapp/,AVAILABLE}{./work/nar/extensions/nifi-update-attribute-nar-1.18.0.nar-unpacked/NAR-INF/bundled-dependencies/nifi-update-attribute-ui-1.18.0.war}
+2023-03-17 11:01:29,947 INFO [main] o.e.j.a.AnnotationConfiguration Scanning elapsed time=208ms
+2023-03-17 11:01:30,001 INFO [main] o.e.j.s.handler.ContextHandler._nifi No Spring WebApplicationInitializer types detected on classpath
+2023-03-17 11:01:30,251 INFO [main] o.e.jetty.server.handler.ContextHandler Started o.e.j.w.WebAppContext@13278a41{nifi,/nifi,file:///opt/nifi/nifi-current/work/jetty/nifi-web-ui-1.18.0.war/webapp/,AVAILABLE}{./work/nar/extensions/nifi-server-nar-1.18.0.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-ui-1.18.0.war}
