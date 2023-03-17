@@ -13,17 +13,23 @@ client = paho.Client("example")
 # establish connection
 client.connect("localhost", 1883)
 
-i = 0
+trames_envoyees = 0
 # loop
 for vehicule in data["véhicule"]:
     # send message
-    client.publish(data["nom du topic MQTT"], "val_" + str(i+1))
-    genere_tram_1.generation_tram_1(vehicule)
+    client.publish(data["nom du topic MQTT"],genere_tram_1.generation_tram_1(vehicule))
     time.sleep(data["temps de latence"])
+    trames_envoyees += 1
+    if trames_envoyees >= data["nombre de trames"]:
+        break
+
+trames_envoyees = 0
 for vehicule in data["véhicule"]:
     # send message
-    client.publish(data["nom du topic MQTT"], "val_" + str(i+1))
-    genere_tram_2.generation_tram_2(vehicule)
+    client.publish(data["nom du topic MQTT"],genere_tram_2.generation_tram_2(vehicule))
     time.sleep(data["temps de latence"])
+    trames_envoyees += 1
+    if trames_envoyees >= data["nombre de trames"]:
+        break
 # disconnection
 client.disconnect()
