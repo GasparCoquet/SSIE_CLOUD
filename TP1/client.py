@@ -1,20 +1,24 @@
 import paho.mqtt.client as paho
 
-# Configuration des paramètres de connexion MQTT
+# Set MQTT connection parameters
 broker_address = "localhost"
 port = 1883
 username = "admin"
 password = "admin"
+topic = "Topic SSIE"
 
-# Création d'un client MQTT
+# Create MQTT client object
 client = paho.Client()
 
-# Configuration des identifiants de connexion MQTT
+# Set MQTT credentials
 client.username_pw_set(username, password)
 
-# Connexion au broker MQTT et souscription aux sujets
-client.connect(broker_address, port=port)
-client.subscribe("Topic SSIE")
+# Connect to MQTT broker and subscribe to topic
+try:
+    client.connect(broker_address, port=port)
+    client.subscribe(topic)
+except ConnectionRefusedError:
+    print("Connection to MQTT broker failed. Please check if the broker is running.")
 
-# Boucle d'écoute des messages MQTT en permanence
+# Loop to listen for MQTT messages
 client.loop_forever()

@@ -1,9 +1,9 @@
 {
-    "nom du topic MQTT": "Topic SSIE",
-    "temps de latence": 2,
-    "adresse du serveur MQTT": "http://localhost:8161/",
-    "nombre de trames": 2,
-    "véhicule":[
+    "Name of MQTT Topic": "Topic SSIE",
+    "latency": 2,
+    "MQTT server address": "http://localhost:8161/",
+    "number of frames": 2,
+    "vehicle":[
         {
             "VIN": "VF7VDA5BABA602431",
             "pnb": 14,

@@ -1,10 +1,10 @@
-Git:
-https://github.com/GasparCoquet/SSIE_CLOUD.git
+## Git:
+* https://github.com/GasparCoquet/SSIE_CLOUD.git
 
-##Compilation - Execution:
-python3 client.py
+## Compilation - Execution:
+* To consume a message you must execute: python3 client.py
 
-python3 connect.py
+* Then on another terminal run: python3 connect.py
 
-Fichier de configuration:
-data.json
+## Fichier de configuration:
+* data.json

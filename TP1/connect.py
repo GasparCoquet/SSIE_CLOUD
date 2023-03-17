@@ -1,35 +1,53 @@
 import paho.mqtt.client as paho
 import time
 import json
-import genere_tram_1
-import genere_tram_2
+from generate_message_1 import generate_message_1
+from generate_message_2 import generate_message_2
 
-# Ouverture du fichier JSON
+# Load data from JSON file
 with open('data.json') as f:
     data = json.load(f)
 
-# create client object
+# Create MQTT client object
 client = paho.Client("example")
-# establish connection
-client.connect("localhost", 1883)
 
-trames_envoyees = 0
-# loop
-for vehicule in data["véhicule"]:
-    # send message
-    client.publish(data["nom du topic MQTT"],genere_tram_1.generation_tram_1(vehicule))
-    time.sleep(data["temps de latence"])
-    trames_envoyees += 1
-    if trames_envoyees >= data["nombre de trames"]:
+# Connect to MQTT broker
+try:
+    client.connect("localhost", 1883)
+except ConnectionRefusedError:
+    print("Connection to MQTT broker failed. Please check if the broker is running.")
+
+# Initialization of messages counter
+frames_send = 0
+
+# Send messages for vehicle data
+for vehicule in data["vehicle"]:
+    # Send message using generate_message_1
+    client.publish(data["Name of MQTT Topic"], generate_message_1(vehicule))
+    time.sleep(data["latency"])
+
+    # Increment sent messages counter
+    frames_send += 1
+
+    # Stop sending messages if the specified number of frames has been reached
+    if frames_send >= data["number of frames"]:
         break
 
-trames_envoyees = 0
-for vehicule in data["véhicule"]:
-    # send message
-    client.publish(data["nom du topic MQTT"],genere_tram_2.generation_tram_2(vehicule))
-    time.sleep(data["temps de latence"])
-    trames_envoyees += 1
-    if trames_envoyees >= data["nombre de trames"]:
+# Reset sent messages counter
+frames_send = 0
+
+# Send messages for another type of vehicle data
+for vehicule in data["vehicle"]:
+    # Send message using generate_message_2
+    client.publish(data["Name of MQTT Topic"], generate_message_2(vehicule))
+    time.sleep(data["latency"])
+
+    # Increment sent messages counter
+    frames_send += 1
+
+    # Stop sending messages if the specified number of frames has been reached
+    if frames_send >= data["number of frames"]:
         break
-# disconnection
+
+# Disconnect from MQTT broker
 client.disconnect()
